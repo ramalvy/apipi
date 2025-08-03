@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selamat malam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f864cc;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            
+        }
+        .card {
+            background-color: #ffffff;
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            padding: 20px;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px 15px 0 0;
+        }
+        .card h1 {
+            color: #e45eb7;
+            margin: 20px 0 10px;
+            font-size: 24px;
+        }
+        .card p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #d53a47;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .button:hover {
+            background-color: #b3303b;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>selamat malam sayang aku</h1>
+        <p> 
+            aku tau hari hari ini kamu lagi ga nyaman karena haid, pusing, badmood, dan mungkin badan yang terasa cape.
+            terimakasi yaa udah kuat sejauh ini, aku slalu kagum sama kamu, meski lagi lemah pun kamu tetep istimewa di
+            mataku. malam ini, aku ingin kamu istirahat dengan tenang. biarkan tubuhmu rileks, biarkan pikiranmu tenang
+            damai, dan biarkan aku yang jaga kamu lewat doa. semoga rasa sakitny perlahan reda, dan bbony jadi lebih nyenyak
+            ditemani mimpi mimpi indah. aku pengen banget ada di samping kamu sekarang, mijitin punggungmu, nyiapin minuman
+            hangat, atau peluk kamu sampai kamu tertidur dibahuku hhe. tapi meski kita jauh, cintaku sayangku selalu dekat
+            sama kamu. jadii, bbo dengan tenang yaa sayangkuuu, jangan lupa klo kamu ngga sendirian, ada aku yang selalu 
+            mikirin kamu, sayang kamu, dan akan terus ada buat kamu. selamat malam cinta aku, mimpi indah yaa, semoga besok kamu bangun
+            dengan hati lebih ringan dan senyum manis yang selalu aku ridukan
+        </p>
+    </div>
+<audio autoplay loop>
+    <source src="audio/aaa.mp3" type=" audio/mpeg" />
+  </audio>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audio = document.querySelector("audio");
+      const userInteraction = () => {
+        audio.play();
+        document.removeEventListener("click", userInteraction);
+      };
+      document.addEventListener("click", userInteraction);
+    });
+  </script>
+</body>
+</html> 
